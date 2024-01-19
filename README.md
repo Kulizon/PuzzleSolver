@@ -2,7 +2,7 @@
 
 ## Opis projektu
 "Układator puzzli" jest prostą aplikacją stworzoną w języku Python. 
-Aplikacja wizualizuje proces układa puzzli na danej przez użytkownika planszy, gdzie elementy puzzli 
+Aplikacja wizualizuje proces układania puzzli na danej przez użytkownika planszy, gdzie elementy puzzli 
 mogą być zarówno obracane, jak i odwracane.
 
 Algorytm wstawiania elementów na planszę jest wyjątkowo uproszczony i opiera się na losowym wyborze kolejnych elementów.

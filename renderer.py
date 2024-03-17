@@ -21,6 +21,7 @@ def setup_window(window_width, window_height, given_rect_size):
     rect_size = given_rect_size
     return pygame.display.set_mode([window_width, window_height])
 
+
 def render_board(screen, solved_matrix):
     window_width, window_height = pygame.display.get_surface().get_size()
 
@@ -58,7 +59,7 @@ def render_pieces(screen, number_matrices, board_offset_y):
     all_pieces_offset_y = board_offset_y + 55
 
     # przestrzeń między elementami obok siebie i pod sobą
-    grid_gap = 10
+    grid_gap = 5
 
     # zmienna do późniejszego wyznaczania offset_y - aby elementy w rzędach na siebie nie nachodziły
     max_row_elem_height = 0
@@ -68,7 +69,6 @@ def render_pieces(screen, number_matrices, board_offset_y):
         max_row_elem_height = max(max_row_elem_height, len(matrix))
 
         for row_index, row in enumerate(matrix):
-
             # jeśli ma wyjść poza ekran - zacznij od nowego rzędu
             if offset_x + len(row) * rect_size + 25 > window_width:
                 offset_x = 0
@@ -87,7 +87,7 @@ def render_pieces(screen, number_matrices, board_offset_y):
                     pygame.draw.rect(screen, colors[number], rect_to_draw)
 
         # odleglość dla następnego elementu, zależna od aktualnego elementu
-        offset_x = offset_x + len(matrix[0]) * (rect_size + 5)
+        offset_x = offset_x + len(matrix[0]) * (rect_size + grid_gap)
 
     return offset_y
 

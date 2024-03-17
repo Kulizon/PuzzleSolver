@@ -3,6 +3,12 @@ from solver import *
 from renderer import *
 import copy
 
+def pretty_print_matrix(matrix):
+    for row in matrix:
+        for element in row:
+            print(f"{element:4}", end=" ")  # Adjust the width as needed
+        print()
+
 # wczytanie argumentów wywołania
 file_path_full_board, file_path_board_to_solve, moves_delay, width, height, rect_size = parse_arguments()
 
@@ -21,7 +27,6 @@ pygame.init()
 pygame.display.set_caption("Układator puzzli")
 
 screen = setup_window(width, height, rect_size)
-clock = pygame.time.Clock()
 start_time = pygame.time.get_ticks()
 
 running = True

@@ -1,5 +1,7 @@
 # Projekt "Układator puzzli" 
 
+![](https://github.com/Kulizon/presentation.gif)
+
 ## Opis projektu
 "Układator puzzli" jest prostą aplikacją stworzoną w języku Python. 
 Aplikacja wizualizuje proces układania puzzli na danej przez użytkownika planszy, gdzie elementy puzzli 

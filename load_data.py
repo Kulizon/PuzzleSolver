@@ -1,6 +1,13 @@
 import argparse
 from matrix_utility import *
 
+def pretty_print_matrix(matrix):
+    for row in matrix:
+        for element in row:
+            print(f"{element:4}", end=" ")  # Adjust the width as needed
+        print()
+
+
 def get_matrix_dimensions(file_path):
     with open(file_path, 'r') as file:
         for i, line in enumerate(file):

@@ -1,6 +1,6 @@
 # Projekt "Układator puzzli" 
 
-![](https://github.com/Kulizon/presentation.gif)
+![](https://raw.githubusercontent.com/Kulizon/PuzzleSolver/master/presentation.gif)
 
 ## Opis projektu
 "Układator puzzli" jest prostą aplikacją stworzoną w języku Python. 
